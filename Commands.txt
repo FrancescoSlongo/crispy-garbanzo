@@ -1,0 +1,7 @@
+### Pull docker image
+docker pull dwavesys/ocean-dev
+### Check pulled docker images 
+docker image ls
+### Run interactive shell in docker. Copy past the IMAGE ID from previous command in XXXXX
+docker run -it XXXXX
+# docker run -it $(docker image ls | sed -n '2{p;q;}' | awk '{print $3}')
